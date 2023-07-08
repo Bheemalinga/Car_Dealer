@@ -115,10 +115,12 @@ public class CarShowRoom {
         if (AddAcc || insur){
             discount = input.next();
         }
-        else
-        discount = "";
-        System.out.println("0");
+        else{
+            discount = "";
+            System.out.println("0");
+        }
         int Numeric = 0;
+        int discountNumeric;
         /*
         * Write the code to access the CarDetails.java file's properties,
         * Which gives discount.
@@ -128,8 +130,11 @@ public class CarShowRoom {
                 // Stripping the string discount for the % removal.
                 String numericPart = discount.substring(0, discount.length() - 1);
                 // Type Conversion: string into an integer for further processing.
-                int discountNumeric = Integer.parseInt(numericPart);
-                Numeric = (discountNumeric / 100)*cost;
+                discountNumeric = Integer.parseInt(numericPart);
+                System.out.println("DiscountNumeric : "+discountNumeric);
+                double discountPercentage = discountNumeric *cost;
+                Numeric = (int) (discountPercentage / 100);
+                System.out.println("Numeric :"+ Numeric);
                 // Checking if the discount is greater than 30,000.
                 if (Numeric >= 30_000){
                     System.err.println("maximum discount to be applied should not cross 30,000 and only applying 30,000 as discount.");
@@ -139,6 +144,8 @@ public class CarShowRoom {
                 }
                 else{
                     // Applying the discount as entered by the Dealer in Percentage.
+                    discountNumeric = Integer.parseInt(numericPart);
+                    Numeric = (discountNumeric / 100)*cost;
                     carDetails.discount(Numeric);
                 }
             }

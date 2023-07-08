@@ -33,6 +33,7 @@ public class CarDetails {
         return Total_Cost += Ad_Acc;
     }
     public int discount(int discount) {
+        System.out.println("discount : "+discount);
         System.out.println(Total_Cost - discount);
         return Total_Cost -= discount;
     }
