@@ -6,6 +6,8 @@
 
 - Create a branch
 
-In the src folder you will find CarDetails.java and CarShowRoom.java
+- In the src folder you will find CarDetails.java and CarShowRoom.java
 
-Run the files :)
+- Open them
+
+And Run the files :)
