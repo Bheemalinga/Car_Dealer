@@ -1,22 +1,17 @@
 
 import java.util.Scanner;
-// import Car_Dealer.CarDetails;
 
 public class CarShowRoom {
     public static void main(String[]a){
         Scanner input = new Scanner(System.in);
         int cost = 0;
-        // boolean verifier = true;
         int totalcost = 0;
 
 
         String CarModel;
-        // Looping until we get the correct Car Model as Input.
-
-        // while(verifier){
             System.out.print("Select car model: ");
             CarModel = input.nextLine();
-            System.out.println();
+            // System.out.println();
 
             // This is an enhanced version of the switch-case provided by my IDE.
 
@@ -68,10 +63,9 @@ public class CarShowRoom {
                     System.exit(0);
                 }
             }
-        // }
 
         /*
-        * Write the code to access the CarDetails.java file's properties,
+        * Code, To access the CarDetails.java file's properties,
         * Which assigns the cost of the above selected car to the Total_cost
         * */
         CarDetails carDetails = new CarDetails(cost);
@@ -83,9 +77,9 @@ public class CarShowRoom {
 
         System.out.print("Do you need insurance: ");
         String question1 = input.next();
-        System.out.println();
+        //System.out.println();
         /*
-        *  Write the code to access the CarDetails.java file's properties,
+        *  Code, To access the CarDetails.java file's properties,
         *  which assigns the car insurance cost to the Total_cost.
         */
         boolean insur = (question1.equalsIgnoreCase("Yes"));
@@ -98,9 +92,9 @@ public class CarShowRoom {
 
         System.out.print("Do you need Additional Accessories: ");
         String question2 = input.next();
-        System.out.println();
+        //System.out.println();
         /*
-        * Write the code to access the CarDetails.java file's properties,
+        * Code, To access the CarDetails.java file's properties,
         * Which assigns Additional Accessories cost to the Total_cost.
         * */
         boolean AddAcc = (question2.equalsIgnoreCase("Yes"));
@@ -122,7 +116,7 @@ public class CarShowRoom {
         int Numeric = 0;
         int discountNumeric;
         /*
-        * Write the code to access the CarDetails.java file's properties,
+        * Code, To access the CarDetails.java file's properties,
         * Which gives discount.
         * */
         if (AddAcc || insur){
@@ -177,7 +171,8 @@ public class CarShowRoom {
 
 
         /*
-        * Write the code such that we get the Total_cost variable into this CarShowRoom.java from CarDetails.java.
+        * Code, that fetches the Total_cost variable
+        * into this CarShowRoom.java from CarDetails.java.
         * */
         totalcost =carDetails.totalcost();
         input.close();
