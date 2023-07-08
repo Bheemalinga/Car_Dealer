@@ -131,10 +131,8 @@ public class CarShowRoom {
                 String numericPart = discount.substring(0, discount.length() - 1);
                 // Type Conversion: string into an integer for further processing.
                 discountNumeric = Integer.parseInt(numericPart);
-                System.out.println("DiscountNumeric : "+discountNumeric);
                 double discountPercentage = discountNumeric *cost;
                 Numeric = (int)(discountPercentage / 100);
-                System.out.println("Numeric :"+ Numeric);
                 // Checking if the discount is greater than 30,000.
                 if (Numeric >= 30_000){
                     System.err.println("maximum discount to be applied should not cross 30,000 and only applying 30,000 as discount.");
