@@ -18,44 +18,30 @@ public class CarShowRoom {
             switch (CarModel) {
                 case "Polo Trendline" -> {
                     cost = 8_70_000;
-                   
-                    
                     break;
                 }
                 case "Polo Highline" -> {
                     cost = 10_09_000;
-                   
-                    
                     break;
                 }
                 case "Virtus Trendline" -> {
                     cost = 11_05_000;
-                   
-                    
                     break;
                 }
                 case "Virtus Highline" -> {
                     cost = 13_08_000;
-                   
-                    
                     break;
                 }
                 case "Taigun Trendline" -> {
                     cost = 14_89_000;
-                   
-                    
                     break;
                 }
                 case "Taigun Highline" -> {
                     cost = 15_42_000;
-                   
-                    
                     break;
                 }
                 case "Taigun Topline" -> {
                     cost = 17_71_000;
-                   
-                    
                     break;
                 }
                 default ->{
