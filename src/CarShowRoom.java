@@ -110,8 +110,9 @@ public class CarShowRoom {
             discount = input.next();
         }
         else{
-            discount = "";
-            System.out.println("0");
+            discount = input.next();
+            if(discount != "0")
+                System.out.println("Any one of the additional features have to be added");
         }
         int Numeric = 0;
         int discountNumeric;
