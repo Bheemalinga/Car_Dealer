@@ -150,7 +150,7 @@ public class CarShowRoom {
                 }
                 else{
                     System.err.println("maximum discount to be applied should not cross 30,000"
-                            + "and only applying 30,000 as discount.");
+                            + " and only applying 30,000 as discount.");
                     // Applying the discount as 30000.
                     carDetails.discount(30_000);
                     Numeric = 30_000;
